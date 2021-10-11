@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(204, 204, 204);
     justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 main{
-    max-width: 600px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    align-items: center;
+
 }
 .login-cointainer{
     flex-direction: column;
+    min-height: 600px;
+    color: #161616;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 header{
@@ -25,37 +31,118 @@ header{
 
 .register{
     display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #8a8a8a;
 }
 
+.maintext-container{
+    padding: 0px 60px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 
 h1{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 27px;
 }
 .main-text{
     margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
 
 input{
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .reset-password{
     display: block;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #868686;
 
 }
 
 .login-button{
     display: block;
+    display: flex;
+    justify-content: center;
+    background-color: #4495A9;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+hr{
+    margin: 0 60px 40px;
 }
 
 footer {
     height: 20px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
 }
 
+
+.logos{
+    display: flex;
+    align-items: flex-end;
+
+}
+.footer-text{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #8a8a8a;
+    font-weight: 500;
+}
 .image-container{
     background-image: url(https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
 }
+
+.text-container{
+    color: aliceblue;
+    padding: 80px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.image{
+    height: 30px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
